@@ -19,8 +19,10 @@ defmodule ElixirAppWeb.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", ElixirAppWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ElixirAppWeb do
+    pipe_through :api
+
+    post "/start", StartController, :start
+    post "/move", MoveController, :move
+  end
 end
