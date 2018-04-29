@@ -1,0 +1,4 @@
+<div class="jumbotron">
+  <h2>Elixir Snake</h2>
+  <p class="lead">POST your JSON to /start and to /move<br />to begin using Elixir Snake.</p>
+</div>
